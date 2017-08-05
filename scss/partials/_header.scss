@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.logo {
+  margin-bottom: 19px;
+  img {
+    display: block;
+  }
+}
+
+.slogan {
+  font-family: $fontFamily--bold;
+  font-size: 12px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.info-block {
+  text-align: center;
+  border-bottom: 1px solid $grey--light;
+  padding-bottom: 70px;
+  margin-bottom: 40px;
+  @media #{$tablet-up} {
+    padding-bottom: 140px;
+    margin-bottom: 80px;
+  }
+  &__title {
+    span {
+      color: $yellow;
+    }
+  }
+}

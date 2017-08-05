@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="css/application.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header container">
+        <a href="https://www.adyax.com/" class="logo" target="_blank"><img src="images/logo.svg" alt="Adyax"></a>
+        <span class="slogan">A Better Experience</span>
+    </header>
+
+    <main class="main container">
+        <div class="info-block">
+            <h1 class="info-block__title">Frond-End Developer<span>.</span></h1>
+            <div class="info-block_description">
+                <p>Adyax’s core values take top priority: we care for our client, and we care for our people. Staff and clients work in partnership with consistent,  transparent communication.</p>
+            </div>
+        </div>
+
+        <form action="">
+            <div class="row fieldset">
+                <div class="col">
+                    <div class="input-wrap">
+                        <label for="your-name">Your name</label>
+                        <input type="text" id="your-name" name="your_name" required>
+                    </div>
+                    <div class="input-wrap">
+                        <label for="your-email">Your email</label>
+                        <input type="email" id="your-email" name="your_email" required>
+                    </div>
+                    <div class="input-wrap">
+                        <label for="your-portfolio">Your portfolio / github</label>
+                        <input type="text" id="your-portfolio" name="your_portfolio">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="input-wrap">
+                        <label for="your-message">Message</label>
+                        <textarea name="your_message" id="your-message"></textarea>
+                    </div>
+                    <div class="input-wrap input-wrap--file">
+                        <label for="your-cv">CV</label>
+                        <input type="file" class="jfilestyle" id="your-cv" data-placeholder="Choose file" required>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="fieldset">
+                <div class="fieldset__label">Graduated from <a href="http://onlineacademy.com" target="_blank">onlineacademy.com</a>?</div>
+                <div class="choose-list">
+                    <div class="choose-wrap">
+                        <input type="radio" id="yes" name="onlineacademy" checked="checked">
+                        <label for="yes"><span class="choose-icon">&nbsp;</span>Yes</label>
+                    </div>
+                    <div class="choose-wrap">
+                        <input type="radio" id="no" name="onlineacademy">
+                        <label for="no"><span class="choose-icon">&nbsp;</span>No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="fieldset">
+                <div class="fieldset__label fieldset__label--help">* Please mark skills you are best in, and types of tasks you are good at </div>
+                <div class="choose-grid">
+                    <div class="choose-wrap">
+                        <input type="checkbox" id="skill_1" name="skill_1">
+                        <label for="skill_1"><span class="choose-icon">&nbsp;</span>jQuery</label>
+                    </div>
+                    <div class="choose-wrap">
+                        <input type="checkbox" id="skill_2" name="skill_2">
+                        <label for="skill_2"><span class="choose-icon">&nbsp;</span>Jade</label>
+                    </div>
+                    <div class="choose-wrap">
+                        <input type="checkbox" id="skill_3" name="skill_3">
+                        <label for="skill_3"><span class="choose-icon">&nbsp;</span>Use GRUNT/GULP</label>
+                    </div>
+                    <div class="choose-wrap">
+                        <input type="checkbox" id="skill_4" name="skill_4">
+                        <label for="skill_4"><span class="choose-icon">&nbsp;</span>Stylus</label>
+                    </div>
+                    <div class="choose-wrap">
+                        <input type="checkbox" id="skill_5" name="skill_5">
+                        <label for="skill_5"><span class="choose-icon">&nbsp;</span>HAML</label>
+                    </div>
+                    <div class="choose-wrap">
+                        <input type="checkbox" id="skill_6" name="skill_6">
+                        <label for="skill_6"><span class="choose-icon">&nbsp;</span>Know Angular/React</label>
+                    </div>
+                    <div class="choose-wrap">
+                        <input type="checkbox" id="skill_7" name="skill_7">
+                        <label for="skill_7"><span class="choose-icon">&nbsp;</span>SASS</label>
+                    </div>
+                    <div class="choose-wrap">
+                        <input type="checkbox" id="skill_8" name="skill_8">
+                        <label for="skill_8"><span class="choose-icon">&nbsp;</span>Front-end development for Android</label>
+                    </div>
+                    <div class="choose-wrap">
+                        <input type="checkbox" id="skill_9" name="skill_9">
+                        <label for="skill_9"><span class="choose-icon">&nbsp;</span>LESS</label>
+                    </div>
+                    <div class="choose-wrap">
+                        <input type="checkbox" id="skill_10" name="skill_10">
+                        <label for="skill_10"><span class="choose-icon">&nbsp;</span>Front-end development for iOS</label>
+                    </div>
+                    <div class="choose-wrap">
+                        <input type="checkbox" id="skill_11" name="skill_11">
+                        <label for="skill_11"><span class="choose-icon">&nbsp;</span>CoffeeScript</label>
+                    </div>
+                    <div class="choose-wrap">
+                        <input type="checkbox" id="skill_12" name="skill_12">
+                        <label for="skill_12"><span class="choose-icon">&nbsp;</span>Front-end development for Windows Phone</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-wrap">
+                <button type="submit" class="btn btn--submit">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Adyax specializes in working with multi-national, multi-brand companies on a wide range of customer, client and employee-facing solutions.</p>
+        </div>
+    </footer>
+</div>
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/vendor/jquery-filestyle.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+</html>

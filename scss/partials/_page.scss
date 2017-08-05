@@ -1,0 +1,58 @@
+.main {
+  padding-bottom: 100px;
+  @media #{$tablet-up} {
+    padding-bottom: 190px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  @media #{$tablet-up} {
+    flex-direction: row;
+    margin: 0 -25px;
+  }
+  .col {
+    flex: 100%;
+    @media #{$tablet-up} {
+      flex: 50%;
+      padding: 0 25px;
+    }
+  }
+}
+
+.fieldset {
+  margin-bottom: 20px;
+  &__label {
+    font-family: $fontFamily--regular;
+    font-size: 16px;
+    line-height: 2.25;
+    margin-bottom: 15px;
+    &--help {
+      font-family: $fontFamily--light;
+      font-size: 12px;
+      line-height: 2.08;
+      text-align: left;
+      color: #979797;
+      margin-bottom: 30px;
+    }
+
+    a {
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: $yellow;
+      }
+      &:hover {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
+}

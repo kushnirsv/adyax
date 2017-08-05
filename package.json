@@ -1,0 +1,17 @@
+{
+  "name": "Adyax form",
+  "version": "0.1.0",
+  "authors": [
+    "Sergey Kushnir"
+  ],
+  "description": "Test project for Adyax",
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "grunt": "~0.4.5",
+    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-postcss": "^0.5.5",
+    "grunt-sass": "^1.1.0"
+  }
+}

@@ -1,0 +1,36 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    font-family: $fontFamily--semibold;
+    font-size: 18px;
+    line-height: 1.79;
+    color: $black--main;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @media #{$tablet-up} {
+        font-size: 24px;
+    }
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    @media #{$mobile-up} {
+        width: 480px;
+    }
+    @media #{$tablet-up} {
+        width: 760px
+    }
+    @media #{$desktop-up} {
+        width: 980px;    
+    }
+}
